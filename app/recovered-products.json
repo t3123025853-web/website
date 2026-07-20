@@ -1,0 +1,618 @@
+[
+  {
+    "categoryId": "cleaning",
+    "name": "Pet Mist Grooming Brush",
+    "english": "Pet Mist Grooming Brush",
+    "tone": "sky",
+    "image": "/products/catalog/cleaning/pet-mist-grooming-brush.jpg"
+  },
+  {
+    "categoryId": "cleaning",
+    "name": "Bread-Shaped Pet Grooming Brush",
+    "english": "Bread-Shaped Pet Grooming Brush",
+    "tone": "mint",
+    "image": "/products/catalog/cleaning/bread-shaped-pet-grooming-brush.jpg"
+  },
+  {
+    "categoryId": "cleaning",
+    "name": "Pineapple-Shaped Pet Mist Brush",
+    "english": "Pineapple-Shaped Pet Mist Brush",
+    "tone": "peach",
+    "image": "/products/catalog/cleaning/pineapple-shaped-pet-mist-brush.jpg"
+  },
+  {
+    "categoryId": "cleaning",
+    "name": "Pet Hair Removal Roller Brush",
+    "english": "Pet Hair Removal Roller Brush",
+    "tone": "yellow",
+    "image": "/products/catalog/cleaning/pet-hair-removal-roller-brush.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Foldable Pet Water Bottle",
+    "english": "Foldable Pet Water Bottle",
+    "tone": "sky",
+    "image": "/products/catalog/feeding/foldable-pet-water-bottle.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Portable Outdoor Pet Water Bottle",
+    "english": "Portable Outdoor Pet Water Bottle",
+    "tone": "peach",
+    "image": "/products/catalog/feeding/portable-outdoor-pet-water-bottle.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Smart Pet Feeder",
+    "english": "Smart Pet Feeder",
+    "tone": "yellow",
+    "image": "/products/catalog/feeding/smart-pet-feeder.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Smart Pet Feeder",
+    "english": "Smart Pet Feeder",
+    "tone": "sky",
+    "image": "/products/catalog/feeding/smart-pet-feeder-2.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Smart Pet Water Fountain",
+    "english": "Smart Pet Water Fountain",
+    "tone": "mint",
+    "image": "/products/catalog/feeding/smart-pet-water-fountain.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Smart Pet Feeder",
+    "english": "Smart Pet Feeder",
+    "tone": "peach",
+    "image": "/products/catalog/feeding/smart-pet-feeder-3.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Smart Pet Water Fountain",
+    "english": "Smart Pet Water Fountain",
+    "tone": "yellow",
+    "image": "/products/catalog/feeding/smart-pet-water-fountain-2.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Smart Pet Water Fountain",
+    "english": "Smart Pet Water Fountain",
+    "tone": "sky",
+    "image": "/products/catalog/feeding/smart-pet-water-fountain-3.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Smart Pet Water Fountain",
+    "english": "Smart Pet Water Fountain",
+    "tone": "mint",
+    "image": "/products/catalog/feeding/smart-pet-water-fountain-4.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "2-in-1 Pet Feeder",
+    "english": "2-in-1 Pet Feeder",
+    "tone": "peach",
+    "image": "/products/catalog/feeding/2-in-1-pet-feeder.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Collapsible Pet Bowl",
+    "english": "Collapsible Pet Bowl",
+    "tone": "peach",
+    "image": "/products/catalog/feeding/collapsible-pet-bowl.jpg"
+  },
+  {
+    "categoryId": "feeding",
+    "name": "Stainless Steel Pet Bowl",
+    "english": "Stainless Steel Pet Bowl",
+    "tone": "yellow",
+    "image": "/products/catalog/feeding/stainless-steel-pet-bowl.jpg"
+  },
+  {
+    "categoryId": "beds",
+    "name": "Christmas-Themed Cat Bed",
+    "english": "Christmas-Themed Cat Bed",
+    "tone": "sky",
+    "image": "/products/catalog/beds/christmas-themed-cat-bed.png"
+  },
+  {
+    "categoryId": "beds",
+    "name": "Suction-Mounted Cat Bed",
+    "english": "Suction-Mounted Cat Bed",
+    "tone": "mint",
+    "image": "/products/catalog/beds/suction-mounted-cat-bed.png"
+  },
+  {
+    "categoryId": "beds",
+    "name": "Christmas-Themed Cat Bed",
+    "english": "Christmas-Themed Cat Bed",
+    "tone": "peach",
+    "image": "/products/catalog/beds/christmas-themed-cat-bed-2.png"
+  },
+  {
+    "categoryId": "beds",
+    "name": "Suction-Mounted Cat Bed",
+    "english": "Suction-Mounted Cat Bed",
+    "tone": "yellow",
+    "image": "/products/catalog/beds/suction-mounted-cat-bed-2.png"
+  },
+  {
+    "categoryId": "beds",
+    "name": "Bear-Shaped Pet Bed",
+    "english": "Bear-Shaped Pet Bed",
+    "tone": "sky",
+    "image": "/products/catalog/beds/bear-shaped-pet-bed.jpg"
+  },
+  {
+    "categoryId": "beds",
+    "name": "Patterned Cat Bed",
+    "english": "Patterned Cat Bed",
+    "tone": "mint",
+    "image": "/products/catalog/beds/patterned-cat-bed.jpg"
+  },
+  {
+    "categoryId": "beds",
+    "name": "Pet Sofa Bed",
+    "english": "Pet Sofa Bed",
+    "tone": "peach",
+    "image": "/products/catalog/beds/pet-sofa-bed.jpg"
+  },
+  {
+    "categoryId": "beds",
+    "name": "Pet Cooling Mat",
+    "english": "Pet Cooling Mat",
+    "tone": "yellow",
+    "image": "/products/catalog/beds/pet-cooling-mat.jpg"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Geometric Retractable Pet Leash",
+    "english": "Geometric Retractable Pet Leash",
+    "tone": "sky",
+    "image": "/products/catalog/leashes/geometric-retractable-pet-leash.jpg"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Pet Car Safety Belt",
+    "english": "Pet Car Safety Belt",
+    "tone": "mint",
+    "image": "/products/catalog/leashes/pet-car-safety-belt.jpg"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Pet Leash Set",
+    "english": "Pet Leash Set",
+    "tone": "peach",
+    "image": "/products/catalog/leashes/pet-leash-set.jpg"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Pet Harness with Control Handle",
+    "english": "Pet Harness with Control Handle",
+    "tone": "yellow",
+    "image": "/products/catalog/leashes/pet-harness-with-control-handle.jpg"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Geometric Retractable Leash",
+    "english": "Geometric Retractable Leash",
+    "tone": "sky",
+    "image": "/products/catalog/leashes/geometric-retractable-leash.jpg"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Camouflage Pet Harness",
+    "english": "Camouflage Pet Harness",
+    "tone": "mint",
+    "image": "/products/catalog/leashes/camouflage-pet-harness.jpg"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Pet Walking Set",
+    "english": "Pet Walking Set",
+    "tone": "peach",
+    "image": "/products/catalog/leashes/pet-walking-set.png"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Pet Collar",
+    "english": "Pet Collar",
+    "tone": "yellow",
+    "image": "/products/catalog/leashes/pet-collar.png"
+  },
+  {
+    "categoryId": "leashes",
+    "name": "Pet Collar with Handle",
+    "english": "Pet Collar with Handle",
+    "tone": "sky",
+    "image": "/products/catalog/leashes/pet-collar-with-handle.jpg"
+  },
+  {
+    "categoryId": "toilets",
+    "name": "Smart Cat Litter Box",
+    "english": "Smart Cat Litter Box",
+    "tone": "sky",
+    "image": "/products/catalog/toilets/smart-cat-litter-box.jpg"
+  },
+  {
+    "categoryId": "toilets",
+    "name": "Smart Cat Litter Box",
+    "english": "Smart Cat Litter Box",
+    "tone": "mint",
+    "image": "/products/catalog/toilets/smart-cat-litter-box-2.jpg"
+  },
+  {
+    "categoryId": "toilets",
+    "name": "Semi-Enclosed Cat Litter Box",
+    "english": "Semi-Enclosed Cat Litter Box",
+    "tone": "peach",
+    "image": "/products/catalog/toilets/semi-enclosed-cat-litter-box.jpg"
+  },
+  {
+    "categoryId": "toilets",
+    "name": "Fully Enclosed Cat Litter Box",
+    "english": "Fully Enclosed Cat Litter Box",
+    "tone": "yellow",
+    "image": "/products/catalog/toilets/fully-enclosed-cat-litter-box.jpg"
+  },
+  {
+    "categoryId": "toilets",
+    "name": "UV-Sanitizing Cat Litter Box",
+    "english": "UV-Sanitizing Cat Litter Box",
+    "tone": "sky",
+    "image": "/products/catalog/toilets/uv-sanitizing-cat-litter-box.jpg"
+  },
+  {
+    "categoryId": "toilets",
+    "name": "Semi-Enclosed Cat Litter Box",
+    "english": "Semi-Enclosed Cat Litter Box",
+    "tone": "mint",
+    "image": "/products/catalog/toilets/semi-enclosed-cat-litter-box-2.jpg"
+  },
+  {
+    "categoryId": "toilets",
+    "name": "Semi-Enclosed Cat Litter Box",
+    "english": "Semi-Enclosed Cat Litter Box",
+    "tone": "peach",
+    "image": "/products/catalog/toilets/semi-enclosed-cat-litter-box-3.jpg"
+  },
+  {
+    "categoryId": "toilets",
+    "name": "Semi-Enclosed Cat Litter Box",
+    "english": "Semi-Enclosed Cat Litter Box",
+    "tone": "yellow",
+    "image": "/products/catalog/toilets/semi-enclosed-cat-litter-box-4.jpg"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Pet Waste Scooper",
+    "english": "Pet Waste Scooper",
+    "tone": "sky",
+    "image": "/products/catalog/waste/pet-waste-scooper.png"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Pet Waste Scooper",
+    "english": "Pet Waste Scooper",
+    "tone": "mint",
+    "image": "/products/catalog/waste/pet-waste-scooper-2.png"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Waste Bag Dispenser",
+    "english": "Waste Bag Dispenser",
+    "tone": "peach",
+    "image": "/products/catalog/waste/waste-bag-dispenser.jpg"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Pet Waste Scooper",
+    "english": "Pet Waste Scooper",
+    "tone": "yellow",
+    "image": "/products/catalog/waste/pet-waste-scooper-3.jpg"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Biodegradable Pet Waste Bags",
+    "english": "Biodegradable Pet Waste Bags",
+    "tone": "sky",
+    "image": "/products/catalog/waste/biodegradable-pet-waste-bags.jpg"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Pull-Out Pet Waste Bag Roll",
+    "english": "Pull-Out Pet Waste Bag Roll",
+    "tone": "mint",
+    "image": "/products/catalog/waste/pull-out-pet-waste-bag-roll.png"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Eco Friendly Pet Waste Bags",
+    "english": "Eco Friendly Pet Waste Bags",
+    "tone": "peach",
+    "image": "/products/catalog/waste/eco-friendly-pet-waste-bags.png"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Coffee-Scented Pet Waste Bags",
+    "english": "Coffee-Scented Pet Waste Bags",
+    "tone": "yellow",
+    "image": "/products/catalog/waste/coffee-scented-pet-waste-bags.jpg"
+  },
+  {
+    "categoryId": "waste",
+    "name": "Eco Friendly Pet Waste Bags",
+    "english": "Eco Friendly Pet Waste Bags",
+    "tone": "sky",
+    "image": "/products/catalog/waste/eco-friendly-pet-waste-bags-2.jpg"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Pet Ball Launcher",
+    "english": "Pet Ball Launcher",
+    "tone": "mint",
+    "image": "/products/catalog/toys/pet-ball-launcher.jpg"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Pet Toy Ball",
+    "english": "Pet Toy Ball",
+    "tone": "peach",
+    "image": "/products/catalog/toys/pet-toy-ball.png"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Feather Pet Toy Ball",
+    "english": "Feather Pet Toy Ball",
+    "tone": "yellow",
+    "image": "/products/catalog/toys/feather-pet-toy-ball.png"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Mouse-Shaped Pet Toy",
+    "english": "Mouse-Shaped Pet Toy",
+    "tone": "sky",
+    "image": "/products/catalog/toys/mouse-shaped-pet-toy.png"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Smart Interactive Pet Toy Ball",
+    "english": "Smart Interactive Pet Toy Ball",
+    "tone": "mint",
+    "image": "/products/catalog/toys/smart-interactive-pet-toy-ball.png"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Pet Toy Ball",
+    "english": "Pet Toy Ball",
+    "tone": "peach",
+    "image": "/products/catalog/toys/pet-toy-ball-2.png"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Enclosed Interactive Pet Toy",
+    "english": "Enclosed Interactive Pet Toy",
+    "tone": "yellow",
+    "image": "/products/catalog/toys/enclosed-interactive-pet-toy.jpg"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Pet Chew Toy",
+    "english": "Pet Chew Toy",
+    "tone": "sky",
+    "image": "/products/catalog/toys/pet-chew-toy.png"
+  },
+  {
+    "categoryId": "toys",
+    "name": "Pet Chew Toy",
+    "english": "Pet Chew Toy",
+    "tone": "mint",
+    "image": "/products/catalog/toys/pet-chew-toy-2.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "sky",
+    "image": "/products/catalog/apparel/pet-apparel.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "mint",
+    "image": "/products/catalog/apparel/pet-apparel-2.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "peach",
+    "image": "/products/catalog/apparel/pet-apparel-3.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "yellow",
+    "image": "/products/catalog/apparel/pet-apparel-4.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "sky",
+    "image": "/products/catalog/apparel/pet-apparel-5.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "mint",
+    "image": "/products/catalog/apparel/pet-apparel-6.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "peach",
+    "image": "/products/catalog/apparel/pet-apparel-7.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "yellow",
+    "image": "/products/catalog/apparel/pet-apparel-8.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "sky",
+    "image": "/products/catalog/apparel/pet-apparel-9.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "mint",
+    "image": "/products/catalog/apparel/pet-apparel-10.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "peach",
+    "image": "/products/catalog/apparel/pet-apparel-11.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "yellow",
+    "image": "/products/catalog/apparel/pet-apparel-12.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "sky",
+    "image": "/products/catalog/apparel/pet-apparel-13.jpg"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "mint",
+    "image": "/products/catalog/apparel/pet-apparel-14.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "peach",
+    "image": "/products/catalog/apparel/pet-apparel-15.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "yellow",
+    "image": "/products/catalog/apparel/pet-apparel-16.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "sky",
+    "image": "/products/catalog/apparel/pet-apparel-17.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "mint",
+    "image": "/products/catalog/apparel/pet-apparel-18.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "peach",
+    "image": "/products/catalog/apparel/pet-apparel-19.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "yellow",
+    "image": "/products/catalog/apparel/pet-apparel-20.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "sky",
+    "image": "/products/catalog/apparel/pet-apparel-21.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "mint",
+    "image": "/products/catalog/apparel/pet-apparel-22.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "peach",
+    "image": "/products/catalog/apparel/pet-apparel-23.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "yellow",
+    "image": "/products/catalog/apparel/pet-apparel-24.png"
+  },
+  {
+    "categoryId": "apparel",
+    "name": "Pet Apparel",
+    "english": "Pet Apparel",
+    "tone": "sky",
+    "image": "/products/catalog/apparel/pet-apparel-25.png"
+  },
+  {
+    "categoryId": "others",
+    "name": "Pet Stroller",
+    "english": "Pet Stroller",
+    "tone": "sky",
+    "image": "/products/catalog/others/pet-stroller.jpg"
+  },
+  {
+    "categoryId": "others",
+    "name": "Pet Stroller",
+    "english": "Pet Stroller",
+    "tone": "mint",
+    "image": "/products/catalog/others/pet-stroller-2.jpg"
+  },
+  {
+    "categoryId": "others",
+    "name": "Pet Stroller",
+    "english": "Pet Stroller",
+    "tone": "peach",
+    "image": "/products/catalog/others/pet-stroller-3.jpg"
+  },
+  {
+    "categoryId": "others",
+    "name": "Pet Stroller",
+    "english": "Pet Stroller",
+    "tone": "yellow",
+    "image": "/products/catalog/others/pet-stroller-4.jpg"
+  }
+]
