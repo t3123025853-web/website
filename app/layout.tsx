@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
+import SplashCursor from "./SplashCursor";
 import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -39,7 +40,23 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <SplashCursor
+          SIM_RESOLUTION={64}
+          DYE_RESOLUTION={512}
+          CAPTURE_RESOLUTION={256}
+          DENSITY_DISSIPATION={2.4}
+          VELOCITY_DISSIPATION={1.6}
+          PRESSURE_ITERATIONS={12}
+          CURL={2.4}
+          SPLAT_RADIUS={0.13}
+          SPLAT_FORCE={2800}
+          COLOR_UPDATE_SPEED={1.5}
+          RAINBOW_MODE={false}
+          COLOR="#f27c4b"
+        />
+        {children}
+      </body>
     </html>
   );
 }
