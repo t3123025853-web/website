@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
-import SplashCursor from "./SplashCursor";
 import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -36,25 +35,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>
       <body>
-        <SplashCursor
-          SIM_RESOLUTION={64}
-          DYE_RESOLUTION={512}
-          CAPTURE_RESOLUTION={256}
-          DENSITY_DISSIPATION={2.4}
-          VELOCITY_DISSIPATION={1.6}
-          PRESSURE_ITERATIONS={12}
-          CURL={2.4}
-          SPLAT_RADIUS={0.13}
-          SPLAT_FORCE={2800}
-          COLOR_UPDATE_SPEED={1.5}
-          RAINBOW_MODE={false}
-          COLOR="#f27c4b"
-        />
         {children}
       </body>
     </html>

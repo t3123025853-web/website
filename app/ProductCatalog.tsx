@@ -82,14 +82,23 @@ export default function ProductCatalog() {
               key={category.id}
               className={"catalog-category-card" + (selectedId === category.id ? " is-active" : "")}
               aria-pressed={selectedId === category.id}
+              aria-label={`Explore ${category.title}`}
               onClick={() => selectCategory(category.id)}
             >
-              <span className="catalog-category-number">{category.number}</span>
-              <span className="catalog-category-copy">
-                <strong>{category.title}</strong>
-                <small>{category.english}</small>
+              <span className="catalog-category-hover catalog-bt-1" aria-hidden="true" />
+              <span className="catalog-category-hover catalog-bt-2" aria-hidden="true" />
+              <span className="catalog-category-hover catalog-bt-3" aria-hidden="true" />
+              <span className="catalog-category-hover catalog-bt-4" aria-hidden="true" />
+              <span className="catalog-category-hover catalog-bt-5" aria-hidden="true" />
+              <span className="catalog-category-hover catalog-bt-6" aria-hidden="true" />
+              <span className="catalog-category-surface">
+                <span className="catalog-category-number">{category.number}</span>
+                <span className="catalog-category-copy">
+                  <strong>{category.title}</strong>
+                  <small>{category.english}</small>
+                </span>
+                <span className="catalog-category-arrow" aria-hidden="true">↗</span>
               </span>
-              <span className="catalog-category-arrow" aria-hidden="true">↗</span>
             </button>
           ))}
         </div>

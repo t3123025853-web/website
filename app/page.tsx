@@ -1,4 +1,4 @@
-import PawTrail from "./PawTrail";
+import CozyHero from "./CozyHero";
 import AboutExperience from "./AboutExperience";
 import HeaderActions from "./HeaderActions";
 import PetIntruders from "./PetIntruders";
@@ -66,7 +66,6 @@ const complianceDocuments = [
 export default function Home() {
   return (
     <main>
-      <PawTrail />
       <PetIntruders />
       <div className="announcement"><span>FULL-RANGE PET SUPPLIES · GLOBAL B2B SOURCING</span><span className="announcement-note">YIWU · CHINA</span></div>
 
@@ -82,7 +81,8 @@ export default function Home() {
 
       </header>
 
-      <section className="hero hero-cleaning" id="top">
+      <CozyHero />
+      <section className="hero hero-cleaning legacy-hero" aria-hidden="true">
         <div className="hero-grid-lines" aria-hidden="true" />
         <div className="hero-copy">
           <p className="eyebrow">PET GROOMING & CLEANING · B2B</p>
