@@ -880,17 +880,17 @@
   }
 }
 
-/* Keep the two dog cutouts seated into the card edge so their lower bodies do
-   not read as floating above the panels. */
-.cozy-panel-pet.cozy-panel-dachshund { bottom: calc(100% - 76px); }
-.cozy-panel-pet.cozy-panel-golden { bottom: calc(100% - 98px); }
+/* Share one visual baseline with the tabby so all three pets sit on their
+   panel edges with the same amount of overlap. */
+.cozy-panel-pet.cozy-panel-dachshund,
+.cozy-panel-pet.cozy-panel-golden { bottom: calc(100% - 70px); }
 
 @media (max-width: 820px) {
-  .cozy-panel-pet.cozy-panel-dachshund { bottom: calc(100% - 57px); }
-  .cozy-panel-pet.cozy-panel-golden { bottom: calc(100% - 73px); }
+  .cozy-panel-pet.cozy-panel-dachshund,
+  .cozy-panel-pet.cozy-panel-golden { bottom: calc(100% - 51px); }
 }
 
 @media (max-width: 560px) {
-  .cozy-panel-pet.cozy-panel-dachshund { bottom: calc(100% - 43px); }
-  .cozy-panel-pet.cozy-panel-golden { bottom: calc(100% - 57px); }
+  .cozy-panel-pet.cozy-panel-dachshund,
+  .cozy-panel-pet.cozy-panel-golden { bottom: calc(100% - 36px); }
 }

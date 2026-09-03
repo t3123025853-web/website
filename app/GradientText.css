@@ -50,6 +50,9 @@
 
 .cozy-gradient-headline {
   display: block;
+  position: relative;
+  left: 50%;
+  width: max-content;
   max-width: none;
   margin: 0;
   border-radius: 0;
@@ -57,8 +60,11 @@
   font-weight: 900;
   backdrop-filter: none;
   cursor: default;
+  transform: translateX(-50%);
 }
 
 .cozy-gradient-headline .text-content {
   display: block;
+  width: max-content;
+  max-width: none;
 }
