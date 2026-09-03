@@ -45,7 +45,7 @@ export default function ProductsPage() {
       />
       <header className="catalog-header">
         <a className="brand" href="/" aria-label="Return to the Yiwu Summer homepage">
-          <span className="brand-mark brand-logo" aria-hidden="true"><img src="/brand/summer-mark.png" alt="" /></span>
+          <span className="brand-mark brand-logo brand-logo-complete" aria-hidden="true"><img src="/brand/alonrunlife-full-logo.png" alt="" /></span>
           <span><strong>YIWU SUMMER</strong><small>PRODUCT COLLECTION SPACE</small></span>
         </a>
         <div className="catalog-header-actions"><a className="catalog-back-link" href="/">← Back to Home</a><HeaderActions /></div>

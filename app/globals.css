@@ -2246,3 +2246,39 @@ nav,
   .section-heading h2,
   .faq-heading h2{font-size:clamp(36px,10.5vw,48px)}
 }
+
+/* Complete trademark lockup extracted from the supplied trademark artwork. */
+.brand-logo.brand-logo-complete{
+  width:82px;
+  height:66px;
+  padding:3px 5px;
+  border-radius:15px;
+}
+.brand-logo.brand-logo-complete img{
+  object-fit:contain;
+  object-position:center;
+}
+@media(max-width:640px){
+  .brand-logo.brand-logo-complete{width:68px;height:55px;padding:3px 4px}
+}
+
+/* Homepage annotation refinements */
+.trust-strip{
+  background:#0b0b0a;
+}
+.trust-strip span:before{
+  color:var(--orange);
+}
+.site-header .brand strong{
+  font-size:26px;
+  line-height:1;
+}
+.footer-brand .brand-logo-complete{
+  background:#fffdf8;
+}
+@media(max-width:1080px){
+  .site-header .brand strong{font-size:21px}
+}
+@media(max-width:640px){
+  .site-header .brand strong{font-size:18px}
+}

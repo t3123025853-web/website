@@ -1,4 +1,5 @@
 import "./CozyHero.css";
+import GradientText from "./GradientText";
 
 export default function CozyHero() {
   return (
@@ -6,21 +7,47 @@ export default function CozyHero() {
       <div className="cozy-heading-layer">
         <p className="cozy-eyebrow cozy-fade-up cozy-delay-100">FULL-RANGE PET SUPPLIES · GLOBAL B2B SOURCING</p>
         <h1 id="cozy-hero-title" aria-label="Everything Your Pet Business Needs">
-          <span className="cozy-headline-line">
-            <span className="cozy-word cozy-delay-200">Everything</span>
-          </span>
-          <span className="cozy-headline-line">
-            <span className="cozy-word cozy-delay-300">Your</span>
-            <span className="cozy-word cozy-delay-400">Pet</span>
-            <span className="cozy-word cozy-delay-500">Business</span>
-            <span className="cozy-word cozy-delay-600">Needs</span>
-          </span>
+          <GradientText
+            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+            animationSpeed={3}
+            showBorder={false}
+            className="cozy-gradient-headline"
+          >
+            <span className="cozy-headline-line">
+              <span className="cozy-word cozy-delay-200">Everything</span>
+            </span>
+            <span className="cozy-headline-line">
+              <span className="cozy-word cozy-delay-300">Your</span>
+              <span className="cozy-word cozy-delay-400">Pet</span>
+              <span className="cozy-word cozy-delay-500">Business</span>
+              <span className="cozy-word cozy-delay-600">Needs</span>
+            </span>
+          </GradientText>
         </h1>
         <p className="cozy-subtitle cozy-fade-up cozy-delay-700">
           Curated pet products, flexible customization, and practical sourcing support for importers,
           distributors, and online wholesalers.
         </p>
       </div>
+
+      <aside className="cozy-video-window cozy-fade-up cozy-delay-700" aria-label="Yiwu Summer pet product video">
+        <div className="cozy-video-frame">
+          <video
+            src="/media/pet-product-showreel-v2.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="metadata"
+            aria-label="Pet product collection and sourcing showcase"
+          />
+        </div>
+        <div className="cozy-video-caption">
+          <span><i aria-hidden="true" /> Product Showreel</span>
+          <small>00:40</small>
+        </div>
+      </aside>
 
       <div className="cozy-photo-row" aria-label="Yiwu Summer pet product sourcing highlights">
         <article className="cozy-photo cozy-solid-panel cozy-solid-mint cozy-photo-reveal cozy-delay-800">
