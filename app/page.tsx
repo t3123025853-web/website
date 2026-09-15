@@ -93,6 +93,7 @@ const categoryHighlights = [
   { id: "toys", name: "Pet Toys", image: "/products/catalog/toys/pet-chew-toy.png", tone: "coral" },
   { id: "apparel", name: "Pet Apparel", image: "/products/catalog/apparel/pet-apparel-2.jpg", tone: "blue" },
   { id: "others", name: "Other Pet Supplies", image: "/products/catalog/others/pet-stroller-2.jpg", tone: "sand" },
+  { id: "christmas-gifts", name: "Christmas Gifts for Pets", image: "/products/catalog/christmas/christmas-cat-toy-gift-set.jpg", tone: "coral" },
 ].map((category) => ({
   ...category,
   products: category.id === "cleaning"

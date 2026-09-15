@@ -12,6 +12,7 @@ const categoryLabels: Record<string, string> = {
   toys: "Pet Toys",
   apparel: "Pet Apparel",
   others: "Other Pet Supplies",
+  "christmas-gifts": "Christmas Gifts for Pets",
 };
 
 const productCollectionSchema = {
@@ -58,7 +59,7 @@ export default function ProductsPage() {
           <h1>Pet Product Collection<br /><span>A Dedicated B2B Sourcing Space</span></h1>
           <p className="catalog-hero-intro">A curated selection of grooming, feeding, sleeping, walking, hygiene, apparel, and play products for importers, distributors, and online wholesalers.</p>
           <div className="catalog-hero-meta">
-            <span><strong>09</strong><small>PRODUCT CATEGORIES</small></span>
+            <span><strong>10</strong><small>PRODUCT CATEGORIES</small></span>
             <a href="#product-categories">Browse Product Categories <b aria-hidden="true">↗</b></a>
           </div>
         </div>

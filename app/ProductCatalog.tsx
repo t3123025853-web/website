@@ -49,6 +49,7 @@ const categories: Category[] = [
   { id: "toys", number: "07", title: "Pet Toys", english: "PLAY & ENRICHMENT", description: "Interactive, chewing, enrichment, and everyday play products.", products: recoveredFor("toys") },
   { id: "apparel", number: "08", title: "Pet Apparel", english: "APPAREL & ACCESSORIES", description: "Pet clothing, warming garments, and styling accessories.", products: recoveredFor("apparel") },
   { id: "others", number: "09", title: "Other Pet Supplies", english: "MORE PET PRODUCTS", description: "Additional pet products suitable for international wholesale channels.", products: recoveredFor("others") },
+  { id: "christmas-gifts", number: "10", title: "Christmas Gifts for Pets", english: "SEASONAL GIFT COLLECTIONS", description: "Festive advent calendars, multi-piece toy assortments, and holiday gift sets for cats and dogs.", products: recoveredFor("christmas-gifts") },
 ];
 
 export default function ProductCatalog() {

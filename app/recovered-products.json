@@ -614,5 +614,40 @@
     "english": "Pet Stroller",
     "tone": "yellow",
     "image": "/products/catalog/others/pet-stroller-4.jpg"
+  },
+  {
+    "categoryId": "christmas-gifts",
+    "name": "Christmas Cat Toy Gift Set",
+    "english": "Festive Multi-Piece Cat Toy Collection",
+    "tone": "peach",
+    "image": "/products/catalog/christmas/christmas-cat-toy-gift-set.jpg"
+  },
+  {
+    "categoryId": "christmas-gifts",
+    "name": "Cat Advent Calendar Toy Set",
+    "english": "Christmas Countdown Gift Box for Cats",
+    "tone": "yellow",
+    "image": "/products/catalog/christmas/cat-advent-calendar-toy-set.jpg"
+  },
+  {
+    "categoryId": "christmas-gifts",
+    "name": "Christmas Dog Advent Calendar",
+    "english": "Festive Dog Toys & Accessories Gift Set",
+    "tone": "mint",
+    "image": "/products/catalog/christmas/christmas-dog-advent-calendar.jpg"
+  },
+  {
+    "categoryId": "christmas-gifts",
+    "name": "Christmas Dog Toy Gift Box",
+    "english": "Holiday Multi-Toy Collection for Dogs",
+    "tone": "sky",
+    "image": "/products/catalog/christmas/christmas-dog-toy-gift-box.jpg"
+  },
+  {
+    "categoryId": "christmas-gifts",
+    "name": "Christmas Cat Advent Calendar XT-83",
+    "english": "334 g Festive Cat Toy Gift Collection",
+    "tone": "peach",
+    "image": "/products/catalog/christmas/christmas-cat-advent-calendar-xt83.jpg"
   }
 ]
