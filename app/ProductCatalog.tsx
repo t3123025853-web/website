@@ -56,8 +56,21 @@ export default function ProductCatalog() {
   const selected = categories.find((category) => category.id === selectedId) ?? categories[0];
 
   useEffect(() => {
-    const hash = window.location.hash.replace("#", "");
-    if (categories.some((category) => category.id === hash)) setSelectedId(hash);
+    const showLinkedCategory = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (!categories.some((category) => category.id === hash)) return;
+
+      setSelectedId(hash);
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          document.querySelector(".catalog-gallery-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    };
+
+    showLinkedCategory();
+    window.addEventListener("hashchange", showLinkedCategory);
+    return () => window.removeEventListener("hashchange", showLinkedCategory);
   }, []);
 
   const selectCategory = (id: string) => {
@@ -104,7 +117,7 @@ export default function ProductCatalog() {
         </div>
       </section>
 
-      <section className="catalog-gallery-section" aria-live="polite">
+      <section className="catalog-gallery-section" id="selected-category-products" aria-live="polite">
         <div className="catalog-gallery-heading">
           <div><span>{selected.number} · {selected.english}</span><h2>{selected.title}</h2></div>
           <p>{selected.description}</p>

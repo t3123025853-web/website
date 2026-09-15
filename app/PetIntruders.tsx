@@ -43,6 +43,11 @@ export default function PetIntruders() {
 
   return (
     <div className="pet-intruders global-dog-follower" ref={rootRef} aria-hidden="true">
+      <img
+        className="global-cat-companion"
+        src="/pets/american-shorthair-right-peek.png"
+        alt=""
+      />
       <img className="product-dog-intruder" src="/pets/dog-peek.png" alt="" />
     </div>
   );

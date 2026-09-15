@@ -1,5 +1,7 @@
 import "./CozyHero.css";
 import GradientText from "./GradientText";
+import TextType from "./TextType";
+import CountUp from "./CountUp";
 
 export default function CozyHero() {
   return (
@@ -13,14 +15,22 @@ export default function CozyHero() {
             showBorder={false}
             className="cozy-gradient-headline"
           >
-            <span className="cozy-headline-line">
-              <span className="cozy-word cozy-delay-200">Everything</span>
-            </span>
-            <span className="cozy-headline-line">
-              <span className="cozy-word cozy-delay-300">Your</span>
-              <span className="cozy-word cozy-delay-400">Pet</span>
-              <span className="cozy-word cozy-delay-500">Business</span>
-              <span className="cozy-word cozy-delay-600">Needs</span>
+            <span className="cozy-typed-headline">
+              <span className="cozy-typed-headline-reserve" aria-hidden="true">
+                <span className="cozy-headline-line">Everything</span>
+                <span className="cozy-headline-line">Your Pet Business Needs</span>
+              </span>
+              <TextType
+                as="span"
+                className="cozy-text-type"
+                text={["Everything\nYour Pet Business Needs"]}
+                typingSpeed={75}
+                pauseDuration={1500}
+                showCursor={true}
+                cursorCharacter="|"
+                variableSpeed={undefined}
+                onSentenceComplete={undefined}
+              />
             </span>
           </GradientText>
         </h1>
@@ -58,7 +68,19 @@ export default function CozyHero() {
           />
           <div className="cozy-panel-copy">
             <span className="cozy-panel-kicker">Curated Assortment</span>
-            <strong className="cozy-panel-number">2,000+</strong>
+            <strong className="cozy-panel-number" aria-label="2,000 plus">
+              <CountUp
+                from={0}
+                to={2000}
+                separator=","
+                direction="up"
+                duration={0.5}
+                className="count-up-text"
+                onStart={undefined}
+                onEnd={undefined}
+              />
+              <span aria-hidden="true">+</span>
+            </strong>
             <h2>Pet Product SKUs</h2>
             <p>Practical choices across grooming, feeding, bedding, toys, and everyday pet care.</p>
             <a className="gradient-button" href="/products#product-categories">
@@ -99,7 +121,19 @@ export default function CozyHero() {
           />
           <div className="cozy-panel-copy">
             <span className="cozy-panel-kicker">Global B2B Experience</span>
-            <strong className="cozy-panel-number">150+</strong>
+            <strong className="cozy-panel-number" aria-label="150 plus">
+              <CountUp
+                from={0}
+                to={150}
+                separator=","
+                direction="up"
+                duration={0.5}
+                className="count-up-text"
+                onStart={undefined}
+                onEnd={undefined}
+              />
+              <span aria-hidden="true">+</span>
+            </strong>
             <h2>Markets Served</h2>
             <p>Sourcing support for importers, distributors, and online wholesalers worldwide.</p>
             <a className="gradient-button" href="#about">
