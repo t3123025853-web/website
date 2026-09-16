@@ -683,7 +683,7 @@
   color: #fff;
   background: transparent;
   box-shadow: 0 10px 26px rgba(8, 24, 20, 0.18);
-  font: 800 clamp(8px, 0.72vw, 11px)/1.1 "Manrope", sans-serif;
+  font: 800 clamp(12px, 0.85vw, 14px)/1.1 "Manrope", sans-serif;
   text-decoration: none;
   cursor: pointer;
   transform: translateZ(0);
@@ -859,7 +859,7 @@
   .cozy-panel-number { font-size: 34px; }
   .cozy-panel-copy h2 { font-size: clamp(18px, 3.8vw, 28px); }
   .cozy-panel-copy p { margin: 9px 0 14px; font-size: 8px; }
-  .cozy-panel-copy a { min-height: 32px; padding: 0 11px; font-size: 7px; }
+  .cozy-panel-copy a { min-height: 34px; padding: 0 11px; font-size: 10.5px; }
   .cozy-panel-audience { gap: 3px; margin-bottom: 8px; }
   .cozy-panel-audience span { padding: 4px 6px; font-size: 5.5px; }
   .cozy-panel-actions { grid-template-columns: 1fr; gap: 4px; }
@@ -890,7 +890,7 @@
   .cozy-panel-kicker, .cozy-panel-copy p, .cozy-panel-audience { display: none; }
   .cozy-panel-number { margin-bottom: 6px; font-size: 25px; }
   .cozy-panel-copy h2 { font-size: clamp(13px, 3.8vw, 18px); line-height: 1.02; }
-  .cozy-panel-copy a { min-height: 27px; margin-top: 12px; padding: 0 7px; font-size: 5.8px; }
+  .cozy-panel-copy a { min-height: 30px; margin-top: 12px; padding: 0 7px; font-size: 9px; }
   .cozy-panel-actions { grid-template-columns: 1fr; gap: 3px; }
   .cozy-panel-actions a { margin-top: 0; }
   .cozy-video-window { top: 235px; width: min(154px, 42vw); padding: 5px; }
