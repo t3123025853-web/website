@@ -183,29 +183,29 @@ function ProductShowcaseSection() {
 function BrandCapabilitySection() {
   return (
     <section className="section brand-capability-section" id="brand-capability" aria-labelledby="brand-capability-title">
+      <div className="brand-capability-drift" aria-hidden="true">
+        <DriftWall
+          items={brandDriftItems}
+          columns={5}
+          tileWidth={200}
+          tileHeight={132}
+          gap={18}
+          tilt={16}
+          turn={-14}
+          perspective={1200}
+          depth={120}
+          speed={42}
+          direction="up"
+          variance={0.45}
+          parallax={0.6}
+          lift={64}
+          fade={0.6}
+          dim={0.72}
+          overlayColor="#060010"
+          style={{}}
+        />
+      </div>
       <div className="brand-capability">
-        <div className="brand-capability-drift" aria-hidden="true">
-          <DriftWall
-            items={brandDriftItems}
-            columns={5}
-            tileWidth={200}
-            tileHeight={132}
-            gap={18}
-            tilt={16}
-            turn={-14}
-            perspective={1200}
-            depth={120}
-            speed={42}
-            direction="up"
-            variance={0.45}
-            parallax={0.6}
-            lift={64}
-            fade={0.6}
-            dim={0.55}
-            overlayColor="#060010"
-            style={{}}
-          />
-        </div>
         <div className="brand-capability-mark">
           <div className="brand-capability-meta"><span>ALONRUNLIFE</span><small>BRAND SYSTEM / 01</small></div>
           <div className="brand-capability-logo-frame"><BrandPetLogo /></div>
