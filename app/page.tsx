@@ -532,7 +532,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top"><span className="brand-mark brand-logo brand-logo-complete" aria-hidden="true"><img src="/brand/alonrunlife-footer-white-text.png" alt="" /></span><span><strong>YIWU SUMMER</strong><small>DAILY NECESSITIES CO., LTD.</small></span></a>
+        <a className="brand footer-brand" href="#top"><span className="brand-mark brand-logo brand-logo-complete" aria-hidden="true"><img src="/brand/alonrunlife-footer-white-text-v2.png" alt="" /></span><span><strong>YIWU SUMMER</strong><small>DAILY NECESSITIES CO., LTD.</small></span></a>
         <p>Pet grooming and cleaning products for international B2B buyers.</p><p>© 2026 Yiwu Summer Daily Necessities Co., Ltd.</p>
       </footer>
     </main>
