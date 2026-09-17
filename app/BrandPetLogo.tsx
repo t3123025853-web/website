@@ -50,7 +50,7 @@ export default function BrandPetLogo() {
         <span className="brand-orbit-pet brand-orbit-bone-one">🦴</span>
         <span className="brand-orbit-pet brand-orbit-bone-two">🦴</span>
       </div>
-      <img src="/brand/alonrunlife-brand-lockup-transparent.png" alt="AlonrunLife pet brand logo featuring a dog and cat" />
+      <img src="/brand/alonrunlife-brand-lockup-transparent-v2.png" alt="AlonrunLife pet brand logo featuring a dog and cat" />
 
       <span className="brand-pet-bubble brand-pet-bubble-dog" aria-hidden="true">{dogLine}</span>
       <span className="brand-pet-bubble brand-pet-bubble-cat" aria-hidden="true">{catLine}</span>
