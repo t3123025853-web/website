@@ -58,7 +58,7 @@ const DriftWall = ({
   const pointerDampedRef = useRef({ x: 0, y: 0 });
   const lastTsRef = useRef(null);
 
-  const [containerHeight, setContainerHeight] = useState(600);
+  const [containerSize, setContainerSize] = useState({ width: 1200, height: 600 });
   const [activeId, setActiveId] = useState(null);
   const activeIdRef = useRef(null);
   const [reduced, setReduced] = useState(false);
@@ -81,15 +81,18 @@ const DriftWall = ({
     const unit = tileHeight + gap;
     return columnItems.map(col => {
       const copyHeight = Math.max(unit, col.length * unit);
-      const copies = Math.max(2, Math.ceil((containerHeight * 1.6) / copyHeight) + 1);
+      const copies = Math.max(2, Math.ceil((containerSize.height * 1.6) / copyHeight) + 1);
       return { copyHeight, copies };
     });
-  }, [columnItems, tileHeight, gap, containerHeight]);
+  }, [columnItems, tileHeight, gap, containerSize.height]);
 
   useLayoutEffect(() => {
     if (!containerRef.current) return;
     const ro = new ResizeObserver(([entry]) => {
-      setContainerHeight(entry.contentRect.height || 600);
+      setContainerSize({
+        width: entry.contentRect.width || 1200,
+        height: entry.contentRect.height || 600
+      });
     });
     ro.observe(containerRef.current);
     return () => ro.disconnect();
@@ -112,12 +115,14 @@ const DriftWall = ({
     (px, py) => {
       const plane = planeRef.current;
       if (!plane) return;
+      const planeWidth = Math.max(1, columns * (tileWidth + gap));
+      const coverScale = Math.max(1.18, (containerSize.width * 1.24) / planeWidth);
       plane.style.transform =
-        `translate(-50%, -50%) scale(1.18) ` +
+        `translate(-50%, -50%) scale(${coverScale}) ` +
         `rotateX(${tilt + py}deg) rotateY(${turn + px}deg) rotateZ(${roll}deg) ` +
         `translateZ(${-depth}px)`;
     },
-    [tilt, turn, roll, depth]
+    [columns, tileWidth, gap, containerSize.width, tilt, turn, roll, depth]
   );
 
   useEffect(() => {
@@ -289,5 +294,4 @@ const DriftWall = ({
 };
 
 export default DriftWall;
-
 

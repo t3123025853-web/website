@@ -186,10 +186,10 @@ function BrandCapabilitySection() {
       <div className="brand-capability-drift" aria-hidden="true">
         <DriftWall
           items={brandDriftItems}
-          columns={5}
-          tileWidth={200}
+          columns={10}
+          tileWidth={180}
           tileHeight={132}
-          gap={18}
+          gap={14}
           tilt={16}
           turn={-14}
           perspective={1200}
