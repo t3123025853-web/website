@@ -1,0 +1,9 @@
+{
+  "name": "yiwu-summer-pet-products",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build:aliyun",
+  "assets": {
+    "directory": "./out",
+    "notFoundStrategy": "singlePageApplication"
+  }
+}
