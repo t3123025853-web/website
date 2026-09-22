@@ -22,6 +22,8 @@ const columnFactor = (index, variance) => {
 
 const DriftWall = ({
   items = DEFAULT_ITEMS,
+  atlas,
+  decorative = false,
   columns = 5,
   tileWidth = 200,
   tileHeight = 132,
@@ -62,6 +64,71 @@ const DriftWall = ({
   const [activeId, setActiveId] = useState(null);
   const activeIdRef = useRef(null);
   const [reduced, setReduced] = useState(false);
+  const [nearViewport, setNearViewport] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const [pageVisible, setPageVisible] = useState(true);
+  const [decodedAtlas, setDecodedAtlas] = useState(null);
+  const atlasReady = !atlas || decodedAtlas !== null;
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    // Fetch before this section arrives, without competing with the hero on entry.
+    const warmup = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setNearViewport(true);
+        warmup.disconnect();
+      }
+    }, { rootMargin: '1000px' });
+    const visibility = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting));
+    warmup.observe(container);
+    visibility.observe(container);
+    const updateVisibility = () => setPageVisible(document.visibilityState === 'visible');
+    updateVisibility();
+    document.addEventListener('visibilitychange', updateVisibility);
+    return () => {
+      warmup.disconnect();
+      visibility.disconnect();
+      document.removeEventListener('visibilitychange', updateVisibility);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!atlas || !nearViewport) return;
+    let cancelled = false;
+    let pending = false;
+    let loadedUrl = null;
+    const media = window.matchMedia('(max-width: 620px)');
+    const load = async () => {
+      const url = media.matches ? atlas.mobile : atlas.desktop;
+      if (pending || loadedUrl === url) return;
+      pending = true;
+      try {
+        const image = new Image();
+        image.decoding = 'async';
+        image.fetchPriority = 'low';
+        image.src = url;
+        await image.decode();
+        if (!cancelled) {
+          loadedUrl = url;
+          setDecodedAtlas(url);
+        }
+      } catch {
+        // Keep the complete inline preview if offline or if an asset fails.
+      } finally {
+        pending = false;
+        if (!cancelled && url !== (media.matches ? atlas.mobile : atlas.desktop)) load();
+      }
+    };
+    load();
+    window.addEventListener('online', load);
+    media.addEventListener('change', load);
+    return () => {
+      cancelled = true;
+      window.removeEventListener('online', load);
+      media.removeEventListener('change', load);
+    };
+  }, [atlas, nearViewport]);
 
   useEffect(() => {
     setReduced(prefersReducedMotion());
@@ -126,6 +193,13 @@ const DriftWall = ({
   );
 
   useEffect(() => {
+    applyPlaneTransform(0, 0);
+    trackRefs.current.forEach((track, c) => {
+      if (track) track.style.transform = `translate3d(0, ${-(offsetsRef.current[c] ?? 0)}px, 0)`;
+    });
+    // Keep a complete static wall until the atlas is decoded. No animation work
+    // when off screen, in a background tab, or when reduced motion is requested.
+    if (!atlasReady || !visible || !pageVisible || reduced) return;
     const animate = ts => {
       if (lastTsRef.current === null) lastTsRef.current = ts;
       const dt = Math.min(0.05, Math.max(0, ts - lastTsRef.current) / 1000);
@@ -173,7 +247,7 @@ const DriftWall = ({
       rafRef.current = null;
       lastTsRef.current = null;
     };
-  }, [baseVelocities, columnMeta, pauseOnHover, parallax, reduced, applyPlaneTransform]);
+  }, [baseVelocities, columnMeta, pauseOnHover, parallax, reduced, applyPlaneTransform, atlasReady, visible, pageVisible]);
 
   const activate = useCallback((id, index) => {
     activeIdRef.current = id;
@@ -226,15 +300,26 @@ const DriftWall = ({
       '--dw-gray': grayscale ? 1 : 0,
       '--dw-overlay': overlayColor,
       '--dw-edge': `${Math.max(0, (1 - fade) * 100)}%`,
+      ...(atlas ? { '--dw-atlas': `url("${decodedAtlas || atlas.preview}")` } : {}),
       ...style
     }),
-    [tileWidth, tileHeight, gap, radius, perspective, lift, dim, grayscale, overlayColor, fade, style]
+    [tileWidth, tileHeight, gap, radius, perspective, lift, dim, grayscale, overlayColor, fade, style, atlas, decodedAtlas]
   );
 
   const renderTile = (item, id, colIndex) => {
     const inner = (
       <span className="drift-wall__inner">
-        <img src={item.image} alt={item.title ?? ''} loading="lazy" decoding="async" draggable={false} />
+        {atlas ? (
+          <span
+            className="drift-wall__sprite"
+            role={decorative ? undefined : 'img'}
+            aria-label={decorative ? undefined : item.title}
+            style={{
+              backgroundSize: `${atlas.columns * 100}% ${atlas.rows * 100}%`,
+              backgroundPosition: `${(item.spriteIndex % atlas.columns) * 100 / Math.max(1, atlas.columns - 1)}% ${Math.floor(item.spriteIndex / atlas.columns) * 100 / Math.max(1, atlas.rows - 1)}%`,
+            }}
+          />
+        ) : <img src={item.image} alt={item.title ?? ''} loading="lazy" decoding="async" draggable={false} />}
         <span className="drift-wall__overlay" aria-hidden="true" />
       </span>
     );
@@ -253,13 +338,13 @@ const DriftWall = ({
       );
     }
     return (
-      <div key={id} tabIndex={0} role="button" aria-label={item.title ?? 'tile'} {...commonProps}>
+      <div key={id} tabIndex={decorative ? undefined : 0} role={decorative ? undefined : 'button'} aria-label={decorative ? undefined : item.title ?? 'tile'} {...commonProps}>
         {inner}
       </div>
     );
   };
 
-  const rootClass = ['drift-wall', reduced ? 'drift-wall--reduced' : '', className].filter(Boolean).join(' ');
+  const rootClass = ['drift-wall', reduced ? 'drift-wall--reduced' : '', atlasReady ? 'is-ready' : 'is-loading', className].filter(Boolean).join(' ');
 
   return (
     <div
@@ -294,4 +379,3 @@ const DriftWall = ({
 };
 
 export default DriftWall;
-

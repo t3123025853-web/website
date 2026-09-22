@@ -7,6 +7,7 @@ import BrandPetLogo from "./BrandPetLogo";
 import recoveredProductsData from "./recovered-products.json";
 import CategoryHighlightGrid from "./CategoryHighlightGrid";
 import DriftWall from "./DriftWall";
+import brandWallAtlas from "./brand-wall-atlas.json";
 
 type CategoryPreviewProduct = {
   categoryId: string;
@@ -105,6 +106,7 @@ const categoryHighlights = [
 const brandDriftItems = categoryHighlights.flatMap((category) =>
   category.products.map((product) => ({
     image: product.image,
+    spriteIndex: brandWallAtlas.images.indexOf(product.image),
     title: `${category.name} · ${product.name}`,
     href: undefined,
   })),
@@ -186,6 +188,8 @@ function BrandCapabilitySection() {
       <div className="brand-capability-drift" aria-hidden="true">
         <DriftWall
           items={brandDriftItems}
+          atlas={brandWallAtlas}
+          decorative
           columns={10}
           tileWidth={180}
           tileHeight={132}

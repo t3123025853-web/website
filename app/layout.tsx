@@ -7,6 +7,16 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=alonrunlife-1", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
+      { url: "/brand/alonrunlife-icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand/alonrunlife-icon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/brand/alonrunlife-icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico?v=alonrunlife-1",
+    apple: [{ url: "/brand/alonrunlife-icon-180.png", sizes: "180x180", type: "image/png" }],
+  },
   title: "B2B Pet Grooming & Cleaning Products | Yiwu Summer",
   description:
     "Yiwu Summer Daily Necessities Co., Ltd. supplies pet grooming brushes, cleaning gloves, and bath massage products for international B2B sourcing.",
