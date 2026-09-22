@@ -12,8 +12,10 @@ const { d1, r2 } = hostingConfig;
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 
 const localBindingConfig = {
+  // Workers Builds must deploy to the existing dashboard project, not the
+  // starter package name inferred by the Vite plugin.
+  name: "pet-summer",
   main: "./worker/index.ts",
-  compatibility_flags: ["nodejs_compat"],
   d1_databases: d1
     ? [
         {

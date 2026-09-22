@@ -16,7 +16,11 @@ npm run dev
 npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+`wrangler.jsonc` identifies the existing Cloudflare Worker `pet-summer`.
+The Vite build preserves that name in `dist/server/wrangler.json`, which
+Wrangler deploy uses through `.wrangler/deploy/config.json`. Do not replace
+the name with the starter package name: Workers Builds rejects a deployment
+whose Worker name differs from the connected dashboard project.
 
 ## Included Shape
 
